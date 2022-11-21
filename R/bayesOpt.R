@@ -291,6 +291,7 @@ bayesOpt <- function(
       , .options.multicore = list(preschedule=FALSE)
       , .combine = list
       , .multicombine = TRUE
+      , .maxcombine= nrow(initGrid)      #### ADDED PER https://github.com/AnotherSamWilson/ParBayesianOptimization/issues/47
       , .inorder = FALSE
       , .errorhandling = 'pass'
       #, .packages ='data.table'
